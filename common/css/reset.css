@@ -1,0 +1,44 @@
+@charset "UTF-8";
+@import url(./fonts.css);
+
+
+* {margin: 0; padding: 0; letter-spacing: -.04em; -webkit-box-sizing: border-box; box-sizing: border-box; -webkit-print-color-adjust: exact !important; print-color-adjust: exact; /* page-break-after: avoid; page-break-before: avoid; page-break-inside: avoid; break-inside: avoid-page; break-before: avoid-page; break-after: avoid-page; */ word-break: keep-all; caret-color: transparent;}
+html {width: 100%; height: 100%; font-size: 0.052vw; background: #E3DBD2;}
+body {position: relative; font-family: "Pretendard-Regular", sans-serif; font-weight: normal; font-size: 16rem; letter-spacing: -0.02em; line-height: 150%; color: #1a1a1a; height: 100%; width: 100%; -webkit-text-size-adjust: 100%; -moz-text-size-adjust: 100%; -ms-text-size-adjust: 100%; -webkit-overflow-scrolling: touch; -webkit-print-color-adjust: exact !important; overflow-x: hidden; line-height: 24rem;}
+body, div, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, p, form, fieldset, table, tr, th, td {margin: 0; padding: 0; font-weight: normal;}
+ul, ol, li {list-style: none;}
+img, fieldset {border: none; vertical-align: top;}
+legend, caption {overflow: hidden; position: absolute; border: 0; width: 1px; height: 1px; clip: rect(1px, 1px, 1px, 1px);}
+textarea, button {vertical-align: middle;}
+option {padding: 10px;}
+input[type="text"] {-webkit-appearance: none;}
+input[type="date"] {-webkit-appearance: none; color: #1A1A1A; background: #fff;}
+input[type="radio"], input[type="checkbox"] {border: 0; padding: 0; /* height: auto; */ -webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none;}
+input[type="password"]::-ms-reveal, input[type="password"]::-ms-clear {display: none;}
+select {padding: 5rem; -webkit-appearance: none; -moz-appearance: none; appearance: none;}
+textarea {padding: 10rem; vertical-align: middle; background: #fff; border: 1px solid #e1e1e1; font-family: "Pretendard-Regular", sans-serif; color: #000; letter-spacing: -.04rem; font-size: max(16rem, 12px); -webkit-appearance: none; -webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none; border-radius: 0; resize: vertical;}
+a {text-decoration: none; color: inherit;}
+a:hover, a:focus, a:active {text-decoration: none;}
+table {border-collapse: collapse; width: 100%; background: #fff;}
+button {background: none; border: none; padding: 0; margin: 0; cursor: pointer; font-family: "Pretendard-Regular", sans-serif; text-align: left; display: block;}
+button:focus-visible {box-shadow: 0 0 0 2px #000; outline: 2px solid #000;}
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {display: block;}
+strong, b {font-family: "Pretendard-Regular", sans-serif;}
+th {font-family: "Pretendard-Regular", sans-serif;}
+:root {
+  --brandColor: #961E1E;
+}
+input:focus, select:focus, option:focus, textarea:focus, button:focus{
+	outline: none;
+}
+
+@media screen and (max-width: 1024px) {
+  html {font-size: .130vw;}
+  body {font-size: 14rem;}
+}
+
+@media screen and (max-width: 600px) {
+  html {font-size: .256vw;}
+  body {font-size: 14rem;}
+}
+

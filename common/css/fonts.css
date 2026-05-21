@@ -1,0 +1,66 @@
+@charset "UTF-8";
+
+
+/* Pretendard */
+@font-face {
+  font-family: "Pretendard-Black";
+  src: url(../font/Pretendard-Black.eot);
+  src: url(../font/Pretendard-Black.eot?#iefix) format("embedded-opentype"), url(../font/Pretendard-Black.woff) format("woff"), url(../font/Pretendard-Black.ttf) format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Pretendard-ExtraBold";
+  src: url(../font/Pretendard-ExtraBold.eot);
+  src: url(../font/Pretendard-ExtraBold.eot?#iefix) format("embedded-opentype"), url(../font/Pretendard-ExtraBold.woff) format("woff"), url(../font/Pretendard-ExtraBold.ttf) format("truetype");
+  /* font-weight: 700; */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Pretendard-Bold";
+  src: url(../font/Pretendard-Bold.eot);
+  src: url(../font/Pretendard-Bold.eot?#iefix) format("embedded-opentype"), url(../font/Pretendard-Bold.woff) format("woff"), url(../font/Pretendard-Bold.ttf) format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Pretendard-SemiBold";
+  src: url(../font/Pretendard-SemiBold.eot);
+  src: url(../font/Pretendard-SemiBold.eot?#iefix) format("embedded-opentype"), url(../font/Pretendard-SemiBold.woff) format("woff"), url(../font/Pretendard-SemiBold.ttf) format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Pretendard-Medium";
+  src: url(../font/Pretendard-Medium.eot);
+  src: url(../font/Pretendard-Medium.eot?#iefix) format("embedded-opentype"), url(../font/Pretendard-Medium.woff) format("woff"), url(../font/Pretendard-Medium.ttf) format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Pretendard-Regular";
+  src: url(../font/Pretendard-Regular.eot);
+  src: url(../font/Pretendard-Regular.eot?#iefix) format("embedded-opentype"), url(../font/Pretendard-Regular.woff) format("woff"), url(../font/Pretendard-Regular.ttf) format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Pretendard-Light";
+  src: url(../font/Pretendard-Light.eot);
+  src: url(../font/Pretendard-Light.eot?#iefix) format("embedded-opentype"), url(../font/Pretendard-Light.woff) format("woff"), url(../font/Pretendard-Light.ttf) format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GoogleSansFlex_SemiBold";
+  src: url(../font/GoogleSansFlex_SemiBold.woff2) format("woff2");
+  font-weight: 600;
+  font-style: normal;
+}
