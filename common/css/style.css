@@ -27,30 +27,32 @@
 .txt-pack .p1 img {width: 100%;}
 .main .about .txt-pack .p2 {font-size: 36rem; line-height: 150%; font-family: "Pretendard-SemiBold"; margin-bottom: 35rem; transition-delay: .2s;}
 .main .about .txt-pack .p3 {font-size: 24rem; line-height: 160%; font-family: "Pretendard-Medium"; transition-delay: .3s;}
-.main .about .img {width: 500rem; aspect-ratio: 1 / 1; background: #000; border-radius: 24rem; transition-delay: .4s; box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.2) 0px 20px 50px -20px;}
+.main .about .img {width: 500rem; aspect-ratio: 1 / 1; background: #000; border-radius: 24rem; transition-delay: .4s; box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.2) 0px 20px 50px -20px; overflow: hidden;}
+.main .about .img img {width: 100%; height: 100%; object-fit: cover;}
 
 
 
 .main .project {display: flex; gap: 176rem; width: 100%; height: 100vh; overflow: hidden;}
-.main .project .list {width: 1018rem; display: grid; grid-template-columns: 1fr 1fr; gap: 80rem 118rem; margin-left: 80rem;}
+.main .project .list {width: 1018rem; display: grid; grid-template-columns: 1fr 1fr; gap: 80rem 118rem; margin-left: 80rem; padding-top: 100rem;}
 .main .project .list li a {width: 450rem; display: flex; flex-direction: column; gap: 20rem;}
 .main .project .list li:nth-of-type(even) {transform: translateY(215rem);}
-.main .project .list li .img {width: 450rem; height: 450rem; border-radius: 16rem; overflow: hidden; background: #000; transition-duration: .5s;}
+.main .project .list li .img {width: 450rem; height: 450rem; border-radius: 16rem; overflow: hidden; transition-duration: .5s;}
+.main .project .list li .img img {width: 100%; height: 100%; object-fit: cover;}
 .main .project .list li a:hover .img {transform: translateY(-8rem); box-shadow: 0 30rem 80rem rgba(0, 0, 0, 0.12);}
 .main .project .list li .txt {display: flex; flex-direction: column; gap: 6rem;}
 .main .project .list li .txt .tit {display: flex; gap: 12rem;}
-.main .project .list li .txt .tit p {font-size: 32rem; line-height: 150%; font-family: "Pretendard-Bold";}
-.main .project .list li .txt .tit span {font-size: 16rem; line-height: 150%; font-family: "Pretendard-Bold"; opacity: .5; transform: translateY(6rem);}
+.main .project .list li .txt .tit dt {font-size: 32rem; line-height: 150%; font-family: "Pretendard-Bold";}
+.main .project .list li .txt .tit dd {font-size: 16rem; line-height: 150%; font-family: "Pretendard-Bold"; opacity: .5; transform: translateY(6rem);}
 .main .project .list li .txt .desc {display: flex; justify-content: space-between;}
 .main .project .list li .txt .desc p {font-size: 24rem; line-height: 150%; font-family: "Pretendard-Medium"; opacity: .5;}
 .main .project .list li .txt .desc p + p {font-size: 20rem; line-height: 150%; font-family: "Pretendard-Medium"; opacity: .5;}
-.main .project .txt-pack {text-align: right; position: absolute; transform: translateY(-50%); top: 50%; right: 80rem;}
+.main .project .txt-pack {text-align: right; position: absolute; transform: translateY(-50%); top: 50%; right: 80rem; width: 520rem;}
 .main .project .txt-pack .p1 {width: 100rem; margin-left: auto; opacity: 0; transform: translateY(50rem);}
 .main .project .txt-pack .p2 {font-size: 40rem; line-height: 150%; font-family: "Pretendard-Bold"; margin-bottom: 12rem; opacity: 0; transform: translateY(70rem);}
 .main .project .txt-pack .p3 {font-size: 20rem; line-height: 150%; font-family: "Pretendard-Regular"; opacity: 0; transform: translateY(100rem);}
 
 
-.main .contact {padding: 250rem 0; width: max-content; margin: 0 auto;}
+.main .contact {padding: 300rem 0; width: max-content; margin: 0 auto;}
 .main .contact > div {position: relative;}
 .main .contact .p1 {position: absolute; top: 50rem; width: 102rem;}
 .main .contact .p2 {font-size: 160rem; font-family: "GoogleSansFlex_SemiBold", sans-serif; line-height: 150%; transition-delay: .2s;}
@@ -59,7 +61,6 @@
   0% { background-position: 0% 0; }
   100% { background-position: 200% 0; }
 }
-
 .main .contact .p3 {font-size: 24rem; line-height: 150%; font-family: "Pretendard-SemiBold"; margin-top: -20rem; transition-delay: .3s;}
 
 .main .foot {width: 225rem; margin: 0 auto 20rem;}
@@ -86,11 +87,10 @@
 	.main .project .txt-pack .p1 {margin-left: unset;}
 	.main .project .txt-pack .p3 {font-size: 24rem; font-family: "Pretendard-Medium";}
 	.main .project .txt-pack .p3 br {display: none;}
-	.main .project .list {width: 100%; display: flex; flex-direction: column; gap: 40rem; margin-left: 0;}
+	.main .project .list {width: 100%; display: flex; flex-direction: column; gap: 40rem; margin-left: 0; padding-top: 0;}
 	.main .project .list li:nth-of-type(even) {transform: translateY(100rem);}
 	.main .project .list li a {width: 100%;}
 	.main .project .list li .img {width: 100%;}
-	.main .project .list li .img img {width: 100%; height: 100%; object-fit: cover;}
 
 
 	.main .contact .p1 {top: 0;}
@@ -103,7 +103,7 @@
 
 
 .sub {width: 100%; background: #F4F4F1;}
-.sub .hero {width: 100%; height: 100vh; background: pink; position: relative;}
+.sub .hero {width: 100%; height: 100vh; position: relative;}
 .sub .hero .txt-box {position: absolute; left: 110rem; bottom: 90rem; display: flex; flex-direction: column; gap: 40rem; color: #fff;}
 .sub .hero .txt-box .tit {opacity: 0; transform: translateY(100rem);}
 .sub .hero .txt-box .tit a {display: flex; align-items: flex-end; gap: 16rem;}
@@ -121,25 +121,34 @@
 .sub .content ul {width: 100%; display: flex; flex-direction: column; gap: 60rem;}
 .sub .content ul li {display: flex; justify-content: center; gap: 60rem;}
 .sub .content ul li div:first-of-type {width: 600rem;}
-.sub .content ul li div:last-of-type {width: 160rem;}
+.sub .content ul li div + div {width: 160rem;}
 .sub .content ul li div img {width: 100%; box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;}
 
+.sub .hero .bg {position: relative;}
+.sub .hero .bg::after {content: ""; width: 100%; height: 100%; display: block; background: rgba(0, 0, 0, 0.4); position: absolute; top: 0; left: 0;}
 .sub .hero.miraeasset .bg {position: absolute; inset: 0; background: url("../images/project/hero-miraeasset.png") no-repeat; background-size: cover; background-position: center; transform: scale(1.2);}
 .sub .hero.hillstate .bg {position: absolute; inset: 0; background: url("../images/project/hero-hillstate.png") no-repeat; background-size: cover; background-position: center; transform: scale(1.2);}
+.sub .hero.hmgdx .bg {position: absolute; inset: 0; background: url("../images/project/hero-hmgdx.png") no-repeat; background-size: cover; background-position: center; transform: scale(1.2);}
+.sub .hero.hyundai-ce .bg {position: absolute; inset: 0; background: url("../images/project/hero-hyundai-ce.png") no-repeat; background-size: cover; background-position: center; transform: scale(1.2);}
+.sub .hero.glovis .bg {position: absolute; inset: 0; background: url("../images/project/hero-glovis.png") no-repeat; background-size: cover; background-position: center; transform: scale(1.2);}
+.sub .hero.glovis .bg::after {display: none;}
+.sub .hero.ehyundai .bg {position: absolute; inset: 0; background: url("../images/project/hero-ehyundai.png") no-repeat; background-size: cover; background-position: center; transform: scale(1.2);}
+.sub .hero.yungjin .bg {position: absolute; inset: 0; background: url("../images/project/hero-yungjin.png") no-repeat; background-size: cover; background-position: center; transform: scale(1.2);}
 
 
 
 @media screen and (max-width: 1024px) {
-	.sub .hero {height: 40vh;}
-	.sub .hero .txt-box {left: 36rem; bottom: 80rem; gap: 20rem;}
-	.sub .hero .txt-box .tit span {font-size: 40rem;}
+	.sub .hero {height: 45vh;}
+	.sub .hero .txt-box {left: 36rem; bottom: 60rem; gap: 24rem;}
+	.sub .hero .txt-box .tit span {font-size: 42rem;}
 	.sub .hero .txt-box .desc dl {font-size: 24rem;}
 	.sub .hero .txt-box .desc div {font-size: 20rem;}
+	.sub .hero .txt-box .info dl {flex-direction: column; gap: 0; font-size: 24rem;}
 	.sub .hero .txt-box .tit {gap: 10rem;}
 	.sub .hero .txt-box .tit svg {transform: translateY(-6rem); width: 24rem;}
 	.sub .content {width: calc(100% - 72rem);}
 	.sub .content ul li div:first-of-type {width: 400rem;}
-	.sub .content ul li div:last-of-type {width: 100rem;}
+	.sub .content ul li div + div {width: 100rem;}
 }
 
 
