@@ -7,19 +7,15 @@
 .header .year {width: 70rem; height: 23rem; background: url("../images/intro-2026.svg") no-repeat; background-size: contain;}
 .header .portfolio {width: 124rem; height: 33rem; background: url("../images/intro-portfolio.svg") no-repeat; background-size: contain;}
 
-
 .main .intro {width: 100%; height: 100vh; display: flex; align-items: center; justify-content: center;}
 .main .intro .txt {font-size: 240rem; line-height: 90%; font-family: "GoogleSansFlex_SemiBold", sans-serif; text-align: center; display: flex; flex-direction: column; align-items: center;}
 .main .intro .txt div {overflow: hidden; width: max-content; position: relative;}
 .main .intro .txt div p {transform: translateY(300rem); position: relative;}
 .main .intro .txt div:last-of-type p {width: 998rem; height: 198rem;}
 .main .intro .txt div:last-of-type p span:last-of-type {width: 910rem; height: 198rem; display: block; background: url("../images/intro-obj1.svg") no-repeat; background-size: contain; position: absolute; bottom: 0;}
-
 .main .intro .ellipse-wrap { position: absolute; width: 1840rem; height: 735rem; display: flex; align-items: center; justify-content: center;}
 .main .intro .ellipse {width: 100%; height: 100%;}
 .main .intro .path {fill: none; stroke: #000; stroke-width: 1; stroke-dasharray: 6000; stroke-dashoffset: 6000;}
-
-
 
 .main .about {display: flex; width: 100%; height: 100%; padding: 400rem 0; justify-content: center; align-items: center; gap: 80rem;}
 .main .about .txt-pack {width: 820rem;}
@@ -29,8 +25,6 @@
 .main .about .txt-pack .p3 {font-size: 24rem; line-height: 160%; font-family: "Pretendard-Medium"; transition-delay: .3s;}
 .main .about .img {width: 500rem; aspect-ratio: 1 / 1; background: #000; border-radius: 24rem; transition-delay: .4s; box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.2) 0px 20px 50px -20px; overflow: hidden;}
 .main .about .img img {width: 100%; height: 100%; object-fit: cover;}
-
-
 
 .main .project {display: flex; gap: 176rem; width: 100%; height: 100vh; overflow: hidden;}
 .main .project .list {width: 1018rem; display: grid; grid-template-columns: 1fr 1fr; gap: 80rem 118rem; margin-left: 80rem; padding-top: 100rem;}
@@ -51,7 +45,6 @@
 .main .project .txt-pack .p2 {font-size: 40rem; line-height: 150%; font-family: "Pretendard-Bold"; margin-bottom: 12rem; opacity: 0; transform: translateY(70rem);}
 .main .project .txt-pack .p3 {font-size: 20rem; line-height: 150%; font-family: "Pretendard-Regular"; opacity: 0; transform: translateY(100rem);}
 
-
 .main .contact {padding: 300rem 0; width: max-content; margin: 0 auto;}
 .main .contact > div {position: relative;}
 .main .contact .p1 {position: absolute; top: 50rem; width: 102rem;}
@@ -63,8 +56,8 @@
 }
 .main .contact .p3 {font-size: 24rem; line-height: 150%; font-family: "Pretendard-SemiBold"; margin-top: -20rem; transition-delay: .3s;}
 
-.main .foot {width: 225rem; margin: 0 auto 20rem;}
-.main .foot img {width: 100%;}
+.foot {width: 225rem; margin: 0 auto; padding-bottom: 20rem;}
+.foot img {width: 100%;}
 
 @media screen and (max-width: 1024px) {
 	.header {display: flex; justify-content: space-between; width: calc(100% - 60rem); left: 30rem;}
@@ -72,7 +65,6 @@
 	.main .intro .txt {font-size: 120rem; gap: 20rem;}
 	.main .intro .txt div:last-of-type p {width: 500rem; height: 110rem;}
 	.main .intro .txt div:last-of-type p span:last-of-type {width: 450rem; height: 100rem; display: block; background: url("../images/intro-obj1.svg") no-repeat; background-size: contain; position: absolute; bottom: 0; transform: translateY(-8rem) translateX(2rem);}
-
 	.main .intro .ellipse-wrap {width: 900rem; height: 500rem;}
 
 	.main .about {flex-direction: column; padding: 200rem 36rem; gap: 40rem;}
@@ -80,7 +72,6 @@
 	.main .about .txt-pack .p2 {font-size: 40rem; line-height: 150%; font-family: "Pretendard-Bold"; margin-bottom: 12rem;}
 	.main .about .txt-pack .p3 br {display: none;}
 	.main .about .img {width: 460rem;}
-
 
 	.main .project {gap: 60rem; flex-direction: column; height: auto; width: calc(100% - 72rem); margin: 0 auto;}
 	.main .project .txt-pack {position: unset; transform: unset; text-align: left;}
@@ -92,14 +83,11 @@
 	.main .project .list li a {width: 100%;}
 	.main .project .list li .img {width: 100%;}
 
-
 	.main .contact .p1 {top: 0;}
 	.main .contact .p2 {font-size: 60rem;}
 	.main .contact .p2 a {background: linear-gradient(90deg, #000, #666, #000); background-size: 200% 100%;-webkit-background-clip: text; -webkit-text-fill-color: transparent; animation: shine 1.2s linear infinite;}
 	.main .contact .p3 {margin-top: 0;}
 }
-
-
 
 
 .sub {width: 100%; background: #F4F4F1;}
@@ -136,7 +124,6 @@
 .sub .hero.yungjin .bg {position: absolute; inset: 0; background: url("../images/project/hero-yungjin.png") no-repeat; background-size: cover; background-position: center; transform: scale(1.2);}
 
 
-
 @media screen and (max-width: 1024px) {
 	.sub .hero {height: 45vh;}
 	.sub .hero .txt-box {left: 36rem; bottom: 60rem; gap: 24rem;}
@@ -150,11 +137,3 @@
 	.sub .content ul li div:first-of-type {width: 400rem;}
 	.sub .content ul li div + div {width: 100rem;}
 }
-
-
-
-
-
-
-
-
