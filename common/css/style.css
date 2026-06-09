@@ -74,7 +74,7 @@
 	.main .about .img {width: 460rem;}
 
 	.main .project {gap: 60rem; flex-direction: column; height: auto; width: calc(100% - 72rem); margin: 0 auto;}
-	.main .project .txt-pack {position: unset; transform: unset; text-align: left;}
+	.main .project .txt-pack {position: unset; transform: unset; text-align: left; width: 100%;}
 	.main .project .txt-pack .p1 {margin-left: unset;}
 	.main .project .txt-pack .p3 {font-size: 24rem; font-family: "Pretendard-Medium";}
 	.main .project .txt-pack .p3 br {display: none;}
