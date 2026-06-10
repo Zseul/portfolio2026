@@ -60,7 +60,7 @@ const common = (function () {
         const winH = $(window).height();
         const scrollTop = $(window).scrollTop();
         const elTop = $el.offset().top;
-        const triggerPoint = scrollTop + winH * 0.85;
+        const triggerPoint = scrollTop + winH * 0.95;
 
         if (elTop < triggerPoint) {
           requestAnimationFrame(() => {
@@ -72,7 +72,7 @@ const common = (function () {
 
         ScrollTrigger.create({
           trigger: $el[0],
-          start: "top 85%",
+          start: "top bottom-=10",
           once: true,
           onEnter: () => {
             requestAnimationFrame(() => {
@@ -91,6 +91,10 @@ const common = (function () {
       };
 
       self.scrollMotion();
+
+      window.addEventListener("load", () => {
+        ScrollTrigger.refresh();
+      });
     },
 
     // 인트로 애니메이션
