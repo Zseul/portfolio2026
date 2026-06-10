@@ -141,26 +141,22 @@
 
 
 @media screen and (max-width: 600px) {
-  /* header */
   .header {width: calc(100% - 48rem); left: 24rem; top: 16rem;}
   .header .year {width: 50rem;}
   .header .portfolio {width: 80rem;}
 	.header img {width: 100%;}
 
-  /* intro */
-  .main .intro .txt {font-size: 46rem; gap: 6rem;}
-  .main .intro .txt div:last-of-type p {width: 190rem; height: 42rem;}
-  .main .intro .txt div:last-of-type p span:last-of-type {width: 170rem; height: 38rem; transform: translateY(-4rem) translateX(1rem);}
-  .main .intro .ellipse-wrap {width: 320rem; height: 150rem;}
+  .main .intro .txt {font-size: 60rem; gap: 8rem;}
+  .main .intro .txt div:last-of-type p {width: 248rem; height: 55rem;}
+  .main .intro .txt div:last-of-type p span:last-of-type {width: 222rem; height: 50rem; transform: translateY(-5rem) translateX(1rem);}
+  .main .intro .ellipse-wrap {width: 420rem; height: 195rem;}
 
-  /* about */
   .main .about {padding: 100rem 24rem; gap: 24rem;}
   .main .about .txt-pack .p1 {width: 64rem;}
   .main .about .txt-pack .p2 {font-size: 22rem; margin-bottom: 10rem;}
   .main .about .txt-pack .p3 {font-size: 15rem;}
   .main .about .img {width: 100%; max-width: 300rem; margin: 0 auto;}
 
-  /* project */
   .main .project {gap: 36rem; width: calc(100% - 48rem);}
   .main .project .txt-pack .p1 {width: 80rem;}
   .main .project .txt-pack .p2 {font-size: 24rem;}
@@ -172,17 +168,14 @@
   .main .project .list li .txt .desc p {font-size: 15rem;}
   .main .project .list li .txt .desc p + p {font-size: 13rem;}
 
-  /* contact */
   .main .contact {padding: 120rem 24rem;}
   .main .contact .p1 {width: 64rem; top: -4rem;}
 	.main .contact .p1 img {width: 100%;}
   .main .contact .p2 {font-size: 28rem;}
   .main .contact .p3 {font-size: 15rem;}
 
-  /* footer */
   .foot {width: 150rem;}
 
-  /* sub */
   .sub .hero {height: 50vh;}
   .sub .hero .txt-box {left: 24rem; bottom: 40rem; gap: 16rem;}
   .sub .hero .txt-box .tit span {font-size: 28rem;}
