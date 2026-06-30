@@ -1,4 +1,3 @@
-
 .scroll-motion {opacity: 0; transform: translateY(100rem); transition-duration: .7s;}
 .scroll-motion.active {opacity: 1 !important; transform: translateY(0) !important;}
 
@@ -59,48 +58,17 @@
 .foot {width: 225rem; margin: 0 auto; padding-bottom: 20rem;}
 .foot img {width: 100%;}
 
-@media screen and (max-width: 1024px) {
-	.header {display: flex; justify-content: space-between; width: calc(100% - 60rem); left: 30rem;}
-
-	.main .intro .txt {font-size: 120rem; gap: 20rem;}
-	.main .intro .txt div:last-of-type p {width: 500rem; height: 110rem;}
-	.main .intro .txt div:last-of-type p span:last-of-type {width: 450rem; height: 100rem; display: block; background: url("../images/intro-obj1.svg") no-repeat; background-size: contain; position: absolute; bottom: 0; transform: translateY(-8rem) translateX(2rem);}
-	.main .intro .ellipse-wrap {width: 900rem; height: 500rem;}
-
-	.main .about {flex-direction: column; padding: 200rem 36rem; gap: 40rem;}
-	.main .about .txt-pack {width: 100%;}
-	.main .about .txt-pack .p2 {font-size: 40rem; line-height: 150%; font-family: "Pretendard-Bold"; margin-bottom: 12rem;}
-	.main .about .txt-pack .p3 br {display: none;}
-	.main .about .img {width: 460rem;}
-
-	.main .project {gap: 60rem; flex-direction: column; height: auto; width: calc(100% - 72rem); margin: 0 auto;}
-	.main .project .txt-pack {position: unset; transform: unset; text-align: left; width: 100%;}
-	.main .project .txt-pack .p1 {margin-left: unset;}
-	.main .project .txt-pack .p3 {font-size: 24rem; font-family: "Pretendard-Medium";}
-	.main .project .txt-pack .p3 br {display: none;}
-	.main .project .list {width: 100%; display: flex; flex-direction: column; gap: 40rem; margin-left: 0; padding-top: 0;}
-	.main .project .list li:nth-of-type(even) {transform: translateY(100rem);}
-	.main .project .list li a {width: 100%;}
-	.main .project .list li .img {width: 100%; height: 360rem;}
-
-	.main .contact .p1 {top: 0;}
-	.main .contact .p2 {font-size: 60rem;}
-	.main .contact .p2 a {background: linear-gradient(90deg, #000, #666, #000); background-size: 200% 100%;-webkit-background-clip: text; -webkit-text-fill-color: transparent; animation: shine 1.2s linear infinite;}
-	.main .contact .p3 {margin-top: 0;}
-}
-
 
 .sub {width: 100%; background: #F4F4F1;}
 .sub .hero {width: 100%; height: 100vh; position: relative;}
 .sub .hero .txt-box {position: absolute; left: 110rem; bottom: 90rem; display: flex; flex-direction: column; gap: 40rem; color: #fff;}
 .sub .hero .txt-box .tit {opacity: 0; transform: translateY(100rem);}
 .sub .hero .txt-box .tit a {display: flex; align-items: flex-end; gap: 16rem;}
-.sub .hero .txt-box .tit span {font-size: 100rem; font-family: "Pretendard-Bold"; line-height: 120%; position: relative; position: relative;}
+.sub .hero .txt-box .tit span {font-size: 100rem; font-family: "Pretendard-Bold"; line-height: 120%; position: relative;}
 .sub .hero .txt-box .tit svg {transform: translateY(-16rem); width: 30rem;}
 .sub .hero .txt-box .tit span::after {content: ""; position: absolute; left: 0; bottom: 10rem; width: 100%; height: 30rem; background: #fff; transform: scaleX(0); transform-origin: left; transition: transform 0.4s ease; opacity: 0.4;}
 .sub .hero .txt-box .tit a:hover span::after {transform: scaleX(1);}
-.sub .hero .txt-box .info {display: flex; flex-direction: column; gap: 10rem;}
-.sub .hero .txt-box .info {opacity: 0; transform: translateY(100rem);}
+.sub .hero .txt-box .info {display: flex; flex-direction: column; gap: 10rem; opacity: 0; transform: translateY(100rem);}
 .sub .hero .txt-box .info dl {display: flex; gap: 40rem; font-size: 30rem; font-family: "Pretendard-Medium"; line-height: 150%;}
 .sub .hero .txt-box .info div {display: flex; flex-direction: column; font-size: 24rem; font-family: "Pretendard-Medium"; line-height: 150%;}
 
@@ -124,64 +92,65 @@
 .sub .hero.yungjin .bg {position: absolute; inset: 0; background: url("../images/project/hero-yungjin.png") no-repeat; background-size: cover; background-position: center; transform: scale(1.2);}
 
 
+/* ============================ 모바일 (1024 이하 단일 분기) ============================ */
 @media screen and (max-width: 1024px) {
-	.sub .hero {height: 45vh;}
-	.sub .hero .txt-box {left: 36rem; bottom: 60rem; gap: 24rem;}
-	.sub .hero .txt-box .tit span {font-size: 42rem;}
-	.sub .hero .txt-box .desc dl {font-size: 24rem;}
-	.sub .hero .txt-box .desc div {font-size: 20rem;}
-	.sub .hero .txt-box .info dl {flex-direction: column; gap: 0; font-size: 24rem;}
-	.sub .hero .txt-box .tit {gap: 10rem;}
-	.sub .hero .txt-box .tit svg {transform: translateY(-6rem); width: 24rem;}
-	.sub .content {width: calc(100% - 72rem);}
-	.sub .content ul li div:first-of-type {width: 400rem;}
-	.sub .content ul li div + div {width: 100rem;}
-}
-
-
-
-@media screen and (max-width: 600px) {
+  /* 헤더 */
   .header {width: calc(100% - 48rem); left: 24rem; top: 16rem;}
   .header .year {width: 50rem;}
   .header .portfolio {width: 80rem;}
-	.header img {width: 100%;}
+  .header img {width: 100%;}
 
+  /* 인트로 */
   .main .intro .txt {font-size: 60rem; gap: 8rem;}
   .main .intro .txt div:last-of-type p {width: 248rem; height: 55rem;}
   .main .intro .txt div:last-of-type p span:last-of-type {width: 222rem; height: 50rem; transform: translateY(-5rem) translateX(1rem);}
   .main .intro .ellipse-wrap {width: 420rem; height: 195rem;}
 
-  .main .about {padding: 100rem 24rem; gap: 24rem;}
+  /* 어바웃 */
+  .main .about {flex-direction: column; padding: 100rem 24rem; gap: 24rem;}
+  .main .about .txt-pack {width: 100%;}
   .main .about .txt-pack .p1 {width: 64rem;}
-  .main .about .txt-pack .p2 {font-size: 22rem; margin-bottom: 10rem;}
+  .main .about .txt-pack .p2 {font-size: 22rem; line-height: 150%; font-family: "Pretendard-Bold"; margin-bottom: 10rem;}
   .main .about .txt-pack .p3 {font-size: 15rem;}
+  .main .about .txt-pack .p3 br {display: none;}
   .main .about .img {width: 100%; max-width: 300rem; margin: 0 auto;}
 
-  .main .project {gap: 36rem; width: calc(100% - 48rem);}
-  .main .project .txt-pack .p1 {width: 80rem;}
+  /* 프로젝트 */
+  .main .project {flex-direction: column; height: auto; gap: 36rem; width: calc(100% - 48rem); margin: 0 auto;}
+  .main .project .txt-pack {position: unset; transform: unset; text-align: left; width: 100%;}
+  .main .project .txt-pack .p1 {width: 80rem; margin-left: unset;}
   .main .project .txt-pack .p2 {font-size: 24rem;}
-  .main .project .txt-pack .p3 {font-size: 15rem;}
-  .main .project .list {gap: 32rem;}
-	.main .project .list li .img {height: 300rem;}
+  .main .project .txt-pack .p3 {font-size: 15rem; font-family: "Pretendard-Medium";}
+  .main .project .txt-pack .p3 br {display: none;}
+  .main .project .list {width: 100%; display: flex; flex-direction: column; gap: 32rem; margin-left: 0; padding-top: 0;}
+  .main .project .list li:nth-of-type(even) {transform: translateY(100rem);}
+  .main .project .list li a {width: 100%;}
+  .main .project .list li .img {width: 100%; height: 300rem;}
   .main .project .list li .txt .tit dt {font-size: 20rem;}
   .main .project .list li .txt .tit dd {font-size: 13rem;}
   .main .project .list li .txt .desc p {font-size: 15rem;}
   .main .project .list li .txt .desc p + p {font-size: 13rem;}
 
+  /* 컨택트 */
   .main .contact {padding: 120rem 24rem;}
   .main .contact .p1 {width: 64rem; top: -4rem;}
-	.main .contact .p1 img {width: 100%;}
+  .main .contact .p1 img {width: 100%;}
   .main .contact .p2 {font-size: 28rem;}
-  .main .contact .p3 {font-size: 15rem;}
+  .main .contact .p2 a {background: linear-gradient(90deg, #000, #666, #000); background-size: 200% 100%; -webkit-background-clip: text; -webkit-text-fill-color: transparent; animation: shine 1.2s linear infinite;}
+  .main .contact .p3 {font-size: 15rem; margin-top: 0;}
 
   .foot {width: 150rem;}
 
+  /* 서브 히어로 */
   .sub .hero {height: 50vh;}
   .sub .hero .txt-box {left: 24rem; bottom: 40rem; gap: 16rem;}
+  .sub .hero .txt-box .tit {gap: 10rem;}
   .sub .hero .txt-box .tit span {font-size: 28rem;}
   .sub .hero .txt-box .tit svg {transform: translateY(-4rem); width: 18rem;}
-  .sub .hero .txt-box .info dl {font-size: 16rem;}
+  .sub .hero .txt-box .info dl {flex-direction: column; gap: 0; font-size: 16rem;}
   .sub .hero .txt-box .info div {font-size: 14rem;}
+
+  /* 서브 콘텐츠 */
   .sub .content {width: calc(100% - 48rem); padding: 80rem 0; gap: 40rem;}
   .sub .content .desc {font-size: 15rem;}
   .sub .content ul {gap: 32rem;}
